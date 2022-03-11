@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function Card(props) {
     const{title, img, price} = props
     return(
@@ -9,7 +10,7 @@ function Card(props) {
             <br/><br/>
             <span>{price}</span>
             <br/>
-            <button style={{width:'30%', height:'5%'}}>Buy it!</button>
+            <button style={{width:'30%', height:'8%', backgroundColor:'none'}}>Buy it!</button>
         </div>
     )
 }

@@ -1,7 +1,8 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import Card from './Card' 
 import Img from './sw4.jpg'
+import ReactBootstrap from './components/React-bootstrap/react-bootstrap';
 
 function Header(props){
   return(
@@ -14,6 +15,7 @@ function Header(props){
         <h3>About</h3>
         <h3>Projects</h3>
         <h3>{props.name}</h3>
+        <button type="button" class="btn btn-primary">Primary</button>
       </div>
     </header>
   )
@@ -58,13 +60,15 @@ function App() {
     </div>
   );*/
   return(
-    <div className="App">
-      <main className="App-header">
+    <div className="App" >
+      <main className="App-header" style={{display:'flex', flexDirection:'row', justifyContent:'space-evenly'}}>
         <Card 
         title = 'Samsung Watch 4'
         img = {Img}
         price = '$5000'
         />
+        <ReactBootstrap />
+
       </main>
     </div>
   );
