@@ -1,14 +1,16 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button'
+import Categ from '../../../categories.json'
 
 function Categories(){
     return(
         <div>
             <h3>Categories</h3>
-            <Button variant="primary">TV's</Button>
-            <Button variant="primary">Primary</Button>
-            <Button variant="primary">Primary</Button>
-            <Button variant="primary">Primary</Button>
+            {Categ.map((category) => {
+                return (
+                    <Button variant="primary" key={category}>{category}</Button>
+                )
+            })}
         </div>
     )
 }

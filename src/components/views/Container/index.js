@@ -5,9 +5,7 @@ function Tarjetas(){
     return(
         <div>
             <h4>Products</h4>
-            <div style={{display:'flex', flexDirection:'row', justifyContent:'space-around'}}>
-                <Tarjeta/>
-                <Tarjeta/>
+            <div>
                 <Tarjeta/>
             </div>
         </div>
