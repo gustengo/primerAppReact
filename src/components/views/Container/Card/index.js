@@ -4,10 +4,12 @@ import Button from 'react-bootstrap/Button'
 import products from '../../../../products.json'
 
 
-function Tarjeta() {
+function Tarjeta(props) {
+    console.log(props)
    return(
-    products.map((product) => {
+    props.products.map((product) => {
         const {price,image,description,title} = product
+
         return (
             <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={image} />
