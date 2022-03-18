@@ -3,6 +3,7 @@ import Navegador from './Navbar/index'
 import Greet from './Greet/index'
 import Categories from './Categories/index'
 import Tarjetas from './Container/index'
+import Formulario from '../components/Form/index'
 
 function Home(){
     const [products, setProducts] = React.useState([])
@@ -37,10 +38,12 @@ function Home(){
 
     return (
         <div>
+            <Formulario />
             <Navegador />
             <Greet />
             <Categories categories={categories} />
             <Tarjetas products={products} />
+            
         </div>
 
     )

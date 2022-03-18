@@ -1,13 +1,13 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
-import products from '../../../../products.json'
+import products from '../../../products.json'
 
 
 function Tarjeta(props) {
     console.log(props)
    return(
-    props.products.map((product) => {
+    products.map((product) => {
         const {price,image,description,title} = product
 
         return (
